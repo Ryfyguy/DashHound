@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class Alert : MonoBehaviour
 {
-    SpriteRenderer sprite;
+
+    private SpriteRenderer spriteRenderer;
+    public Sprite wait;
+    public Sprite go;
+    
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer.sprite == null)
+        {
+            spriteRenderer.sprite = wait;
+        }
     }  
 
     // Update is called once per frame
@@ -16,7 +24,7 @@ public class Alert : MonoBehaviour
     {
         if (Game.time >= 0)
         {
-            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            spriteRenderer.sprite = go;
         }
     }
 }

@@ -30,7 +30,15 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S) && keyPressed)
         {
             p1time = Game.time;
-            keyPressed = false;  
+            keyPressed = false;
+            if (p1time < 0)
+            {
+                Game.winner = "player2";
+            }
+            else if (p1time < Player2.p2time || Player2.p2time == -200f)
+            {
+                Game.winner = "player1";
+            }
         }
 
         if (Game.winner == "player1")

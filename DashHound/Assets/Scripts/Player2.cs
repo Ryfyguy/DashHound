@@ -31,6 +31,14 @@ public class Player2 : MonoBehaviour
         {
             p2time = Game.time;
             keyPressed = false;
+            if (p2time < 0)
+            {
+                Game.winner = "player1";
+            }
+            else if (p2time < Player.p1time || Player.p1time == -200f)
+            {
+                Game.winner = "player2";
+            }
         }
 
         if (Game.winner == "player2")
