@@ -31,15 +31,84 @@ public class Player : MonoBehaviour
         {
             p1time = Game.time;
             keyPressed = false;
-            if (p1time < 0)
+            if (Player1Key.random == 2)
+            {
+                if (p1time < 0)
+                {
+                    Game.winner = "player2";
+                }
+                else if (p1time < Player2.p2time || Player2.p2time == -200f)
+                {
+                    Game.winner = "player1";
+                }
+            }
+            else
             {
                 Game.winner = "player2";
             }
-            else if (p1time < Player2.p2time || Player2.p2time == -200f)
+        }
+        if (Input.GetKeyDown(KeyCode.W) && keyPressed)
+        {
+            p1time = Game.time;
+            keyPressed = false;
+            if (Player1Key.random == 1)
             {
-                Game.winner = "player1";
+                if (p1time < 0)
+                {
+                    Game.winner = "player2";
+                }
+                else if (p1time < Player2.p2time || Player2.p2time == -200f)
+                {
+                    Game.winner = "player1";
+                }
+            }
+            else
+            {
+                Game.winner = "player2";
             }
         }
+        if (Input.GetKeyDown(KeyCode.D) && keyPressed)
+        {
+            p1time = Game.time;
+            keyPressed = false;
+            if (Player1Key.random == 4)
+            {
+                if (p1time < 0)
+                {
+                    Game.winner = "player2";
+                }
+                else if (p1time < Player2.p2time || Player2.p2time == -200f)
+                {
+                    Game.winner = "player1";
+                }
+            }
+            else
+            {
+                Game.winner = "player2";
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.A) && keyPressed)
+        {
+            p1time = Game.time;
+            keyPressed = false;
+            if (Player1Key.random == 3)
+            {
+                if (p1time < 0)
+                {
+                    Game.winner = "player2";
+                }
+                else if (p1time < Player2.p2time || Player2.p2time == -200f)
+                {
+                    Game.winner = "player1";
+                }
+            }
+            else
+            {
+                Game.winner = "player2";
+            }
+        }
+
+
 
         if (Game.winner == "player1")
         {

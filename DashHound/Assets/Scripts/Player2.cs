@@ -29,15 +29,82 @@ public class Player2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow) && keyPressed)
         {
-            p2time = Game.time;
-            keyPressed = false;
-            if (p2time < 0)
+            if (Player2Key.random == 2)
+            {
+                p2time = Game.time;
+                keyPressed = false;
+                if (p2time < 0)
+                {
+                    Game.winner = "player1";
+                }
+                else if (p2time < Player.p1time || Player.p1time == -200f)
+                {
+                    Game.winner = "player2";
+                }
+            }
+            else
             {
                 Game.winner = "player1";
             }
-            else if (p2time < Player.p1time || Player.p1time == -200f)
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) && keyPressed)
+        {
+            if (Player2Key.random == 1)
             {
-                Game.winner = "player2";
+                p2time = Game.time;
+                keyPressed = false;
+                if (p2time < 0)
+                {
+                    Game.winner = "player1";
+                }
+                else if (p2time < Player.p1time || Player.p1time == -200f)
+                {
+                    Game.winner = "player2";
+                }
+            }
+            else
+            {
+                Game.winner = "player1";
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && keyPressed)
+        {
+            if (Player2Key.random == 3)
+            {
+                p2time = Game.time;
+                keyPressed = false;
+                if (p2time < 0)
+                {
+                    Game.winner = "player1";
+                }
+                else if (p2time < Player.p1time || Player.p1time == -200f)
+                {
+                    Game.winner = "player2";
+                }
+            }
+            else
+            {
+                Game.winner = "player1";
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow) && keyPressed)
+        {
+            if (Player2Key.random == 4)
+            {
+                p2time = Game.time;
+                keyPressed = false;
+                if (p2time < 0)
+                {
+                    Game.winner = "player1";
+                }
+                else if (p2time < Player.p1time || Player.p1time == -200f)
+                {
+                    Game.winner = "player2";
+                }
+            }
+            else
+            {
+                Game.winner = "player1";
             }
         }
 

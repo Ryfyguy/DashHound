@@ -8,10 +8,12 @@ public class Alert : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite wait;
     public Sprite go;
+    AudioSource audioData;
     
     // Start is called before the first frame update
     void Start()
     {
+        audioData = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer.sprite == null)
         {
@@ -25,6 +27,11 @@ public class Alert : MonoBehaviour
         if (Game.time >= 0)
         {
             spriteRenderer.sprite = go;
+            
+        }
+        if (Game.time <0 && Game.time >= -0.5)
+        {
+            audioData.Play(0);
         }
     }
 }

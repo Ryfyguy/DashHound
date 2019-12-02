@@ -5,7 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
     public static string winner = "";
-    public static float time = -8.0f;
+    public static float time = -2.0f;
     // Start is called before the first frame update
     void Start()
     {
