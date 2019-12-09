@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Alert : MonoBehaviour
 {
-
+    public static int p1score = 0;
+    public static int p2score = 0;
     private SpriteRenderer spriteRenderer;
     public Sprite wait;
     public Sprite go;

@@ -233,10 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaec30d856a78af44b9e89f04e8e3ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Up: {fileID: 21300000, guid: e3ac2dc8e0bacad4d84246364b94d906, type: 3}
-  Down: {fileID: 21300000, guid: 63e5dc8af90fcef468c47c2b9d1018c7, type: 3}
-  Left: {fileID: 21300000, guid: 76731e3aa393db74298871a726b393eb, type: 3}
-  Right: {fileID: 21300000, guid: ef603dcb3b6921f49bd0ea8263a42556, type: 3}
+  Up: {fileID: 21300000, guid: f3785371b6f5f6c44a2cfc9f050ba362, type: 3}
+  Down: {fileID: 21300000, guid: 3a22aebaba848274daf5d2bbcac13c95, type: 3}
+  Left: {fileID: 21300000, guid: 45ccefff71855d84dbff9b3a2d6b2dfa, type: 3}
+  Right: {fileID: 21300000, guid: f874cd07ef7671349950099910d00e13, type: 3}
   Win: {fileID: 21300000, guid: f54b3160832488640b7eb32d08e5484e, type: 3}
   Lose: {fileID: 21300000, guid: 2092c38dfb2171b4c9d40613c41a186d, type: 3}
 --- !u!212 &591852655
@@ -281,7 +281,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.22, y: 7.22}
+  m_Size: {x: 1.74, y: 1.74}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -295,8 +295,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591852653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 158.4, y: 60.2, z: 0}
-  m_LocalScale: {x: 5.5080004, y: 5.6, z: 1}
+  m_LocalPosition: {x: 161.8, y: 64.7, z: 0}
+  m_LocalScale: {x: 23.023441, y: 23.743998, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
