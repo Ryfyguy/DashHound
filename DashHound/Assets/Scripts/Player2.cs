@@ -6,7 +6,7 @@ public class Player2 : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
 
-    public bool keyPressed;
+    public static bool keyPressed;
     public Sprite neutral;
     public Sprite winning;
     public Sprite losing;

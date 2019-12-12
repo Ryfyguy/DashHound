@@ -5,8 +5,9 @@ using UnityEngine;
 public class Player1Key : MonoBehaviour
 {
 
-    private SpriteRenderer spriteRenderer;
+    public static SpriteRenderer spriteRenderer;
 
+    public static Sprite None;
     public Sprite Up;
     public Sprite Down;
     public Sprite Left;
@@ -43,14 +44,6 @@ public class Player1Key : MonoBehaviour
             {
                 spriteRenderer.sprite = Right;
             }
-        }
-        else if (Game.winner == "player1")
-        {
-            spriteRenderer.sprite = Win;
-        }
-        else if (Game.winner == "player2")
-        {
-            spriteRenderer.sprite = Lose;
         }
     }
 }
